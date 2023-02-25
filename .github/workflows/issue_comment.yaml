@@ -6,6 +6,6 @@ jobs:
   creating_issue:
     runs-on: ubuntu-latest
     steps:
-      - run: echo '${{ toJSON{github.event} }}' | jq
+      - run: echo '${{ toJSON(github.event) }}' | jq
         
     
